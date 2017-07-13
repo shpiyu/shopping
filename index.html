@@ -2,9 +2,216 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>OLX</title>
+    <!-- Latest compiled and minified CSS BS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">OLX</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login/SignUp</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="search-bar">
+      <div class="container">
+            <div class="input-group" id="adv-search">
+              <input type="text" class="form-control" placeholder="What are you looking for?" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="filter">Filter by</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Snippets</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Author</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Contains the words</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">
+              <ul>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Real State</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Bikes</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Services</a></li>
+
+              </ul>
+            </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!-- TODO: ad lists -->
+            <div class="ad-box">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/ph.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                  <h2>Product Title</h2>
+                  <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
+                  <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-2">
+                  <h3>&#8377;2400</h3>
+                </div>
+              </div>
+            </div>
+            <div class="ad-box">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/ph.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                  <h2>Product Title</h2>
+                  <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
+                  <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-2">
+                  <h3>&#8377;2400</h3>
+                </div>
+              </div>
+            </div>
+            <div class="ad-box">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/ph.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                  <h2>Product Title</h2>
+                  <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
+                  <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-2">
+                  <h3>&#8377;2400</h3>
+                </div>
+              </div>
+            </div>
+            <div class="ad-box">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/ph.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                  <h2>Product Title</h2>
+                  <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
+                  <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-2">
+                  <h3>&#8377;2400</h3>
+                </div>
+              </div>
+            </div>
+            <div class="ad-box">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/ph.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                  <h2>Product Title</h2>
+                  <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
+                  <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-2">
+                  <h3>&#8377;2400</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center-pagination">
+          <ul class="pagination">
+            <li><a href="">&laquo;</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>OLX</h2>
+            <table>
+              <tr>
+                <td><span class="glyphicon glyphicon-earphone"></span></td>
+                <td>
+                  <p>+91-987654567</p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><span class="glyphicon glyphicon-home"></span></td>
+                <td>
+                  <address class="">
+                   1007 Mountain Drive, <br>
+                   Gotham City, <br>
+                   Gotham.
+                </address>
+               </td>
+             </tr>
+            </table>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified BS JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </body>
 </html>
