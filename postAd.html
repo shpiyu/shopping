@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OLX</title>
+    <!-- Latest compiled and minified CSS BS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/postAd.css">
+    <link rel="stylesheet" href="css/product.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">OLX</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right" style="margin-top:6px;">
+          <!-- data-toggle="modal" data-target="#myModal" -->
+          <div class="user-dropdown">
+            <li><a href="#"><span class="glyphicon glyphicon-user user-icon"></span></a></li>
+            <div class="user-dropdown-content dropdown-menu-right" style="padding-top:5px;">
+              <a href="#" class="diabled">User Name</a>
+              <a href="#">Post a new ad</a>
+              <a href="#">My Account</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+        <div class="search-bar">
+          <div class="container">
+                <div class="input-group" id="adv-search">
+                  <input type="text" class="form-control" placeholder="What are you looking for?" />
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                        <label for="filter">Filter by</label>
+                                        <select class="form-control">
+                                            <option value="0" selected>All Snippets</option>
+                                            <option value="1">Featured</option>
+                                            <option value="2">Most popular</option>
+                                            <option value="3">Top rated</option>
+                                            <option value="4">Most commented</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="contain">Author</label>
+                                        <input class="form-control" type="text" />
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="contain">Contains the words</label>
+                                        <input class="form-control" type="text" />
+                                      </div>
+                                      <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories">
+                  <div class="cat-dropdown">
+                    <ul>
+                      <li><a href="#">Cars</a></li>
+                      <li><a href="#">Real Estate</a></li>
+                      <li><a href="#">Mobiles</a></li>
+                      <li><a href="#">Electronics</a></li>
+                      <li><a href="#">Bikes</a></li>
+                      <li><a href="#">Furniture</a></li>
+                      <li><a href="#">Fashion</a></li>
+                      <li><a href="#">Services</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+
+        <div class="new-ad">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <h2>Create a new ad</h2>
+              <form>
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                  <label for="sel1">Categories</label>
+                  <select class="form-control" id="sel1">
+                    <option>Real Estate</option>
+                    <option>Mobile</option>
+                    <option>Cars</option>
+                    <option>Furniture</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="desc">Description</label>
+                  <textarea class="form-control" rows="5" id="desc"></textarea>
+                </div>
+                <div class="form-group">
+                  <div class="upload-img">
+                    <label for="file-upload" class="custom-file-upload">
+                         <p class="plus">+</p> add image
+                    </label>
+                    <input id="file-upload" type="file" multiple/>
+                  </div>
+                  <div class="upload-img">
+                    <label for="file-upload" class="custom-file-upload">
+                         <p class="plus">+</p> add image
+                    </label>
+                    <input id="file-upload" type="file"/>
+                  </div>
+                  <div class="upload-img">
+                    <label for="file-upload" class="custom-file-upload">
+                         <p class="plus">+</p> add image
+                    </label>
+                    <input id="file-upload" type="file"/>
+                  </div>
+                  <div class="upload-img">
+                    <label for="file-upload" class="custom-file-upload">
+                         <p class="plus">+</p> add image
+                    </label>
+                    <input id="file-upload" type="file"/>
+                  </div>
+
+
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </body>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h2>OLX</h2>
+                <table>
+                  <tr>
+                    <td><span class="glyphicon glyphicon-earphone"></span></td>
+                    <td>
+                      <p>+91-987654567</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><span class="glyphicon glyphicon-home"></span></td>
+                    <td>
+                      <address class="">
+                       1007 Mountain Drive, <br>
+                       Gotham City, <br>
+                       Gotham.
+                    </address>
+                   </td>
+                 </tr>
+                </table>
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-4 social-icons">
+                <div class="social-icons">
+                    <a href="" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-google"></a>
+                    <a href="" class="fa fa-youtube"></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+        <!-- jquery -->
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified BS JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(function() {
+
+          $('#login-form-link').click(function(e) {
+          $("#login-form").delay(100).fadeIn(100);
+          $("#register-form").fadeOut(100);
+          $('#register-form-link').removeClass('active');
+          $(this).addClass('active');
+          e.preventDefault();
+        });
+        $('#register-form-link').click(function(e) {
+          $("#register-form").delay(100).fadeIn(100);
+          $("#login-form").fadeOut(100);
+          $('#login-form-link').removeClass('active');
+          $(this).addClass('active');
+          e.preventDefault();
+        });
+
+        });
+
+        </script>
+      </body>

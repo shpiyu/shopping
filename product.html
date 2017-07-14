@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="" class="navbar-brand">OLX</a>
+          <a href="index.html" class="navbar-brand">OLX</a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" data-toggle="modal" data-target="#myModal">Login/SignUp</a></li>
+        <ul class="nav navbar-nav navbar-right" style="margin-top:6px;">
+          <!-- data-toggle="modal" data-target="#myModal" -->
+          <div class="user-dropdown">
+            <li><a href="#"><span class="glyphicon glyphicon-user user-icon"></span></a></li>
+            <div class="user-dropdown-content dropdown-menu-right" style="padding-top:5px;">
+              <a href="#" class="diabled">User Name</a>
+              <a href="postAd.html">Post a new ad</a>
+              <a href="#">My Account</a>
+            </div>
+          </div>
         </ul>
       </div>
     </nav>
@@ -152,7 +162,7 @@
               <div class="cat-dropdown">
                 <ul>
                   <li><a href="#">Cars</a></li>
-                  <li><a href="#">Real State</a></li>
+                  <li><a href="#">Real Estate</a></li>
                   <li><a href="#">Mobiles</a></li>
                   <li><a href="#">Electronics</a></li>
                   <li><a href="#">Bikes</a></li>
@@ -168,9 +178,38 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1 gallery">
+          <div class="main-img">
+            <img src="images/dummy.png" class="img-responsive" alt="">
+          </div>
+          <div class="row thumbnails">
+            <div class="col-md-4 prod-thumb">
+              <img src="images/ph.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-4 prod-thumb">
+              <img src="images/ph.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-4 prod-thumb">
+              <img src="images/ph.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h2>Product Title</h2>
+          <hr>
+          <p class="price">&#8377; 2400</p>
+          <hr>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <input class="send-input" type="text" name="" value="" placeholder="Interested? Message the owner.">
+          <button type="button" class="btn btn-default send-btn" name="button">SEND</button>
+        </div>
+      </div>
+    </div>
 
 
-  </body>
+
 
     <footer class="footer">
       <div class="container">
@@ -238,6 +277,10 @@
     });
 
     });
+
+    </script>
+
+    <script type="text/javascript">
 
     </script>
   </body>

@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="" class="navbar-brand">OLX</a>
+          <a href="index.html" class="navbar-brand">OLX</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" data-toggle="modal" data-target="#myModal">Login/SignUp</a></li>
@@ -152,7 +153,7 @@
               <div class="cat-dropdown">
                 <ul>
                   <li><a href="#">Cars</a></li>
-                  <li><a href="#">Real State</a></li>
+                  <li><a href="#">Real Estate</a></li>
                   <li><a href="#">Mobiles</a></li>
                   <li><a href="#">Electronics</a></li>
                   <li><a href="#">Bikes</a></li>
@@ -171,7 +172,7 @@
     <div class="main">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-8 col-md-offset-2" id="adlists">
             <!-- TODO: ad lists -->
             <div class="ad-box">
               <div class="row">
@@ -179,7 +180,7 @@
                   <a href="product.html"><img src="images/ph.jpg" alt=""></a>
                 </div>
                 <div class="col-md-7">
-                  <a href="product.html" class="product-title"><h2>Product Title</h2></a>
+                  <a href="product.html" class="product-title"><h2>Product Title 1</h2></a>
                   <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
                   <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -194,7 +195,7 @@
                   <a href="product.html"><img src="images/ph.jpg" alt=""></a>
                 </div>
                 <div class="col-md-7">
-                  <a href="product.html" class="product-title"><h2>Product Title</h2></a>
+                  <a href="product.html" class="product-title"><h2>Product Title 2</h2></a>
                   <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
                   <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -203,13 +204,13 @@
                 </div>
               </div>
             </div>
-            <div class="ad-box">
+            <div class="ad-box" >
               <div class="row">
                 <div class="col-md-3">
                   <a href="product.html"><img src="images/ph.jpg" alt=""></a>
                 </div>
                 <div class="col-md-7">
-                  <a href="product.html" class="product-title"><h2>Product Title</h2></a>
+                  <a href="product.html" class="product-title"><h2>Product Title 3</h2></a>
                   <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
                   <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -218,13 +219,13 @@
                 </div>
               </div>
             </div>
-            <div class="ad-box">
+            <div class="ad-box" >
               <div class="row">
                 <div class="col-md-3">
                   <a href="product.html"><img src="images/ph.jpg" alt=""></a>
                 </div>
                 <div class="col-md-7">
-                  <a href="product.html" class="product-title"><h2>Product Title</h2></a>
+                  <a href="product.html" class="product-title"><h2>Product Title 4</h2></a>
                   <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
                   <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -233,13 +234,13 @@
                 </div>
               </div>
             </div>
-            <div class="ad-box">
+            <div class="ad-box" >
               <div class="row">
                 <div class="col-md-3">
                   <a href="product.html"><img src="images/ph.jpg" alt=""></a>
                 </div>
                 <div class="col-md-7">
-                  <a href="product.html" class="product-title"><h2>Product Title</h2></a>
+                  <a href="product.html" class="product-title"><h2>Product Title 5</h2></a>
                   <p style="color:#4e4e4e;">posted by <a href="#">user name</a> on <span class="date">12/54/1995</span></p>
                   <p class="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -331,6 +332,58 @@
 
     });
 
+    </script>
+
+    <script type="text/javascript">
+
+      // console.log('ejhb');
+      // //$('#adlists').addClass('animated slideInDown');
+
+      $('nav').hide();
+      $('.search-bar').hide();
+      setTimeout(function() {
+        $('nav').show().addClass('animated slideInDown');
+        $('.search-bar').show().addClass('animated slideInDown');
+      },10);
+      $('#adlists').children('div').each(function(){
+        $(this).css('visibility','hidden');
+         console.log('dfdf');
+      });
+      var allDivs = $('#adlists').children('div');
+      console.log(allDivs[1]);
+      var index = 0;
+      var speed = 10;
+      setInterval(function() {
+        var div = $(allDivs).get(index);
+      //   // TODO:
+        $(allDivs[index]).addClass('animated slideInDown').css('visibility','visible');
+      //
+         index++;
+      }, speed);
+
+
+
+      // var i=0;
+      // $('#adlists').children('div').each(function() {
+      //     myDiv = $(this);
+      //     setTimeout(function() {
+      //
+      //       console.log('hello');
+      //       myDiv.show().addClass('animated slideInDown');
+      //
+      //     }, i);
+      //
+      //       i=i+1000;
+      // });
+      // $(this).addClass('animated slideInDown');
+      // $('#adlists').children('div').each(function(){
+      //   this.addClass('animated slideInDown');
+      // });
+      // $('.first').addClass('animated fadeInUp');
+      //
+      // setTimeout(function () {
+      //   $('.second').show().addClass('animated fadeInUp');}, 1500
+      // );
     </script>
   </body>
 </html>
