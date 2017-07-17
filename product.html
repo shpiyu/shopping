@@ -6,6 +6,7 @@
     <!-- Latest compiled and minified CSS BS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Libre+Franklin" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -21,9 +22,9 @@
           <div class="user-dropdown">
             <li><a href="#"><span class="glyphicon glyphicon-user user-icon"></span></a></li>
             <div class="user-dropdown-content dropdown-menu-right" style="padding-top:5px;">
-              <a href="#" class="diabled">User Name</a>
+              <a href="profile.html">User Name</a>
               <a href="postAd.html">Post a new ad</a>
-              <a href="#">My Account</a>
+              <a href="account.html">My Account</a>
             </div>
           </div>
         </ul>
@@ -133,13 +134,13 @@
                             <div class="dropdown-menu dropdown-menu-right" role="menu">
                                 <form class="form-horizontal" role="form">
                                   <div class="form-group">
-                                    <label for="filter">Filter by</label>
+                                    <label for="filter">Category</label>
                                     <select class="form-control">
-                                        <option value="0" selected>All Snippets</option>
-                                        <option value="1">Featured</option>
-                                        <option value="2">Most popular</option>
-                                        <option value="3">Top rated</option>
-                                        <option value="4">Most commented</option>
+                                        <option value="0" selected>Mobile</option>
+                                        <option value="1">Real Estate</option>
+                                        <option value="2">Cars</option>
+                                        <option value="3">Bikes</option>
+                                        <option value="4">Furniture</option>
                                     </select>
                                   </div>
                                   <div class="form-group">
@@ -178,7 +179,7 @@
       </div>
     </div>
 
-    <div class="container main">
+    <div class="container main animated fadeIn">
       <div class="row">
         <div class="col-md-5 col-md-offset-1 gallery">
           <div class="main-img">
@@ -203,7 +204,7 @@
           <hr>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <input class="send-input" type="text" name="" value="" placeholder="Interested? Message the owner.">
-          <button type="button" class="btn btn-default send-btn" name="button">SEND</button>
+          <button type="button" class="btn my-btn" name="button">SEND</button>
         </div>
       </div>
     </div>

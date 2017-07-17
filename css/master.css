@@ -1,6 +1,9 @@
 body { padding-top: 50px;
   background-color: #DADFF7;
  }
+ a, table, button{
+   font-family: 'Libre Franklin', sans-serif;
+ }
 .navbar-header{
   display: inline-block;
 }
@@ -8,7 +11,9 @@ body { padding-top: 50px;
 hr{
   border-color: #888;
 }
-
+table{
+  color:white;
+}
 .navbar{
   margin-bottom: 0px;
   background-color: #e68a00;
@@ -19,6 +24,7 @@ hr{
   color: black;
   font-weight: bold;
   font-size: 2em;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .navbar-default:hover .navbar-brand:hover{
@@ -67,6 +73,7 @@ float: right!important;
   padding: 15px;
   background-color: white;
   box-shadow: 0px 0px 10px #888888;
+  margin-bottom: 16px;
 }
 /*login styles*/
 
@@ -92,7 +99,7 @@ float: right!important;
 	transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a.active{
-	color: #029f5b;
+	color: #35485f;
 	font-size: 18px;
 }
 .panel-login>.panel-heading hr{
@@ -123,7 +130,7 @@ float: right!important;
 	border-color: #ccc;
 }
 .btn-login {
-	background-color: #59B2E0;
+	background-color: #35485f;
 	outline: none;
 	color: #fff;
 	font-size: 14px;
@@ -131,13 +138,13 @@ float: right!important;
 	font-weight: normal;
 	padding: 14px 0;
 	text-transform: uppercase;
-	border-color: #59B2E6;
+	border-color: #0f151c;
 }
 .btn-login:hover,
 .btn-login:focus {
 	color: #fff;
-	background-color: #53A3CD;
-	border-color: #53A3CD;
+	background-color: #495a6f;
+	border-color: #0f151c;
 }
 .forgot-password {
 	text-decoration: underline;
@@ -150,7 +157,7 @@ float: right!important;
 }
 
 .btn-register {
-	background-color: #1CB94E;
+	background-color: #35485f;
 	outline: none;
 	color: #fff;
 	font-size: 14px;
@@ -158,13 +165,13 @@ float: right!important;
 	font-weight: normal;
 	padding: 14px 0;
 	text-transform: uppercase;
-	border-color: #1CB94A;
+	border-color: #0f151c;
 }
 .btn-register:hover,
 .btn-register:focus {
 	color: #fff;
-	background-color: #1CA347;
-	border-color: #1CA347;
+	background-color: #495a6f;
+	border-color: #0f151c;
 }
 
 
@@ -265,10 +272,7 @@ float: right!important;
 }
 
 
-.ad-box {
-  margin-bottom: 16px;
 
-}
 .ad-box h2{
   margin-top: 0px;
 }
@@ -295,8 +299,13 @@ float: right!important;
 .center-pagination{
   text-align: center;
 }
+
+
+
 .footer{
   background: #232f3e;
+  background-image: url('../images/dark_texture.jpg');
+  background-repeat: repeat;
   position: relative;
   color: white;
 }
@@ -308,6 +317,10 @@ td{
 .footer a{
   color: white;
   text-decoration: none;
+}
+
+.footer h2{
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .social-icons {

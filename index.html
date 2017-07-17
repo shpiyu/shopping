@@ -6,6 +6,7 @@
     <!-- Latest compiled and minified CSS BS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Libre+Franklin" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/animate.css">
   </head>
@@ -124,17 +125,17 @@
                             <div class="dropdown-menu dropdown-menu-right" role="menu">
                                 <form class="form-horizontal" role="form">
                                   <div class="form-group">
-                                    <label for="filter">Filter by</label>
+                                    <label for="filter">Category</label>
                                     <select class="form-control">
-                                        <option value="0" selected>All Snippets</option>
-                                        <option value="1">Featured</option>
-                                        <option value="2">Most popular</option>
-                                        <option value="3">Top rated</option>
-                                        <option value="4">Most commented</option>
+                                        <option value="0" selected>Mobile</option>
+                                        <option value="1">Real Estate</option>
+                                        <option value="2">Cars</option>
+                                        <option value="3">Bikes</option>
+                                        <option value="4">Furniture</option>
                                     </select>
                                   </div>
                                   <div class="form-group">
-                                    <label for="contain">Author</label>
+                                    <label for="contain">Posted by</label>
                                     <input class="form-control" type="text" />
                                   </div>
                                   <div class="form-group">
@@ -169,11 +170,11 @@
       </div>
     </div>
 
-    <div class="main">
-      <div class="container">
+
+      <div class="container main animated fadeIn">
         <div class="row">
           <div class="col-md-8 col-md-offset-2" id="adlists">
-            <!-- TODO: ad lists -->
+
             <div class="ad-box">
               <div class="row">
                 <div class="col-md-3">
@@ -263,7 +264,7 @@
           </ul>
         </div>
       </div>
-    </div>
+
 
     <footer class="footer">
       <div class="container">
@@ -334,56 +335,5 @@
 
     </script>
 
-    <script type="text/javascript">
-
-      // console.log('ejhb');
-      // //$('#adlists').addClass('animated slideInDown');
-
-      $('nav').hide();
-      $('.search-bar').hide();
-      setTimeout(function() {
-        $('nav').show().addClass('animated slideInDown');
-        $('.search-bar').show().addClass('animated slideInDown');
-      },10);
-      $('#adlists').children('div').each(function(){
-        $(this).css('visibility','hidden');
-         console.log('dfdf');
-      });
-      var allDivs = $('#adlists').children('div');
-      console.log(allDivs[1]);
-      var index = 0;
-      var speed = 10;
-      setInterval(function() {
-        var div = $(allDivs).get(index);
-      //   // TODO:
-        $(allDivs[index]).addClass('animated slideInDown').css('visibility','visible');
-      //
-         index++;
-      }, speed);
-
-
-
-      // var i=0;
-      // $('#adlists').children('div').each(function() {
-      //     myDiv = $(this);
-      //     setTimeout(function() {
-      //
-      //       console.log('hello');
-      //       myDiv.show().addClass('animated slideInDown');
-      //
-      //     }, i);
-      //
-      //       i=i+1000;
-      // });
-      // $(this).addClass('animated slideInDown');
-      // $('#adlists').children('div').each(function(){
-      //   this.addClass('animated slideInDown');
-      // });
-      // $('.first').addClass('animated fadeInUp');
-      //
-      // setTimeout(function () {
-      //   $('.second').show().addClass('animated fadeInUp');}, 1500
-      // );
-    </script>
   </body>
 </html>

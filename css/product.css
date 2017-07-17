@@ -10,6 +10,8 @@
   opacity: 0.75;
   font-size: 1.2em;
   margin-top: 2em;
+  margin-bottom: 2em;
+  background: transparent;
 }
 
 .send-input:focus{
@@ -44,6 +46,26 @@
     display: block;
 }
 
+.my-btn{
+  border-radius: 0px;
+  text-transform: uppercase;
+  background-color: #35485f;
+  color: white;
+  width: 25%;
+  padding: 10px;
+}
+
+.my-btn:hover{
+  background-color: #495a6f ;
+  color: white;
+}
+
+.my-btn:focus{
+  color: white;
+  outline: none;
+}
+
+
 .user-dropdown-content a:hover{
   background-color: #f1f1f1;
 }
@@ -68,4 +90,12 @@ h2{
 .send-btn{
   margin-top: 15px;
   width: 100%;
+  background-color: #232f3e;
+  color: white;
+}
+
+.send-btn:hover{
+  background-color: #35485f;
+  color:white;
+
 }
